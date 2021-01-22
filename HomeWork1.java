@@ -42,11 +42,11 @@ public class HomeWork1 {
 
 
 
-        WebElement dropdown = driver.findElement(By.id("select2-postform-expiration-container")); //нашли дроп даун
+        WebElement dropdown = driver.findElement(By.id("select2-postform-expiration-container")); 
         dropdown.click();
 
-        List<WebElement> dropDownValues = driver.findElement(By.id("select2-postform-expiration-results")) // добавляем все результаты дроп даун в лист
-                .findElements(By.tagName("li")); // по тегу
+        List<WebElement> dropDownValues = driver.findElement(By.id("select2-postform-expiration-results")) 
+                .findElements(By.tagName("li")); 
         dropDownValues.get(2).click();
 
         WebElement searchSecondField = driver.findElement(By.id("postform-name"));
